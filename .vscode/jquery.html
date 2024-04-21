@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <style>
+    div{
+         
+
+
+    }
+   </style>
+</head>
+<body>
+    <div id="div1"><p>HI</p></div>
+    <div id="div2"><p>How ARE YOU</p></div>
+    <div id="div3"><p>DEAR</p></div>
+
+    <style>
+       
+       #div1{
+            height: 100px;
+            width: 100px;
+            background-color: cadetblue;
+            border: solid crimson;
+            border-radius: 50%;
+        }
+        #div2{
+            height: 100px;
+            width: 100px;
+            background-color:blue ;
+            border: solid;
+            border-radius: 50%;
+
+        }
+        #div3{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(14, 151, 215);
+            border: solid;
+            border-radius: 50%;
+            
+
+        }
+    </style>
+    <button onclick="fun()" >Click me </button>
+    <script>
+        function fun(){
+            $("div").css('background-color','blue').fadeToggle(10000);
+            $("p").fadeToggle(1000) ;       }
+    </script>
+
+
+    
+</body>
+</html>

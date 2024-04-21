@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="program1.css">
+</head>
+<body>
+    <center><br><div class="container">
+        <label for="age"><b>Enter your age :</b></label>
+        <br> <br>
+        <input type="number" id="age" min="0">
+        <br> <br>
+        <input type="text" name="" id="name" placeholder="Enter Your Name">
+        <br> <br>
+        <input type="text" id="country"placeholder="enter your country">
+        <button onclick="validateAge()">Check Eligibility</button>
+        <p id="result"></p></div><center>
+        
+     
+      </div>
+    
+      <script>
+        function validateAge() {
+            var age = document.getElementById("age").value;
+            var resultElement = document.getElementById("result");
+            var name = document.getElementById("name");
+            var country = document.getElementById("country").value;
+            if ((age >=18) &&(country == "india" || country== "india")) {
+                resultElement.innerText = name.value+ " congrats you are eligible to vote🤗";
+            } else {
+                resultElement.innerText =name.value+ " Bai Muchkondu Manege Ogu 😂😂😂";
+            } else {
+                resultElement.innerText=name.value
+            }
+        }
+        
+        </script>
+      <style>
+            body{
+                  background-image: url(https://paytmblogfinal.wpengine.com/wp-content/uploads/2024/01/What-is-Voter-ID-Card_Inside-1024x640.jpg);
+                  background-size: auto;
+
+            }
+            div{
+               background-color: blanchedalmond ;
+               height: 200px; 
+               width: 500px;
+              
+
+            }
+
+      </style>
+       
+    </body>
+    </html>

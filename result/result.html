@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <style>
+        body{
+          background-image: url(https://bsmedia.business-standard.com/_media/bs/img/article/2021-09/20/full/1632101780-4712.jpg);
+         
+        }
+        div{
+           background-color: chartreuse;
+           height: 200px;
+           width: 200px;
+           align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exam result</h1>
+        <input type="text" name="" placeholder="enter your name" id="name">
+        <button  id="btn" onclick="result()">submit</button>
+        <p id="result"></p>
+
+    </div>
+    <script>
+        function result(){
+         var name = document.getElementById("name").value;
+         var result = document.getElementById("result");
+         var marks = Math.random()*100;
+          
+         if(name==""){
+               alert(" please enter your name sorry ")
+
+
+         }
+         else
+         {
+            if(marks>=35 && marks<60 ){
+                result.innerHTML = name+" you have just passed with marks in sslc "+marks.toFixed(2)                 
+            } else if (marks>=61 && marks<80){ 
+                result.innerHTML = name +"you have passed with first class in sslc "+marks.toFixed(2)
+            } else if (marks>=81 && marks<100){
+               result.innerHTML = name +" you have passed with distinution in sslc "+marks.toFixed(2)
+            }
+            else{
+                result.innerHTML = name+" you have failed with marks in sslc "+marks.toFixed(2)
+            }              
+         }
+    
+        }   
+         
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+def mesurement();
+  %=height :120%
+  cm=margin:20cm
+  em=letter-spacing:7cm
+  ex=line=height:3ex
+  mm=word-spacing:2mm
+  in =word-spacing:2in
+  pc=font-size:20pc
+  pt=font-size:20pt
+  px=padding:2px
+
+ def colour_
+ hex code:#rrggbb
+short hex code#rgb
+rgb%#rgb(rrr%,ggg%,bbb%)
+rgb absolute=rgb(rrr,ggg,bbb)
+keyword=aqua,black,etc....
+
+
+background-items();
+background-colour
+backgroung-image
+background-repeat
+background-position
+background-attachment
+background
+
+def font_items();
+   font-family\style\variant\weight\size
+
+
+def text_items();
+    color
+    direction
+    letter-spacing
+    word-spacing
+    text-indent
+    text-align
+    text-decoration
+    text-transform
+    white-space
+
+
+
+
+    

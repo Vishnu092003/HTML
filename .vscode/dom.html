@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    
+    
+    <style>
+        div{
+            background-color:yellowgreen;
+           width: fit-content;
+           height: auto;
+           align-items: center;
+           color: chocolate;
+           align-content: center;
+        }
+          
+        label{
+            background-color: antiquewhite;
+            border-radius: 10px;
+              align-items: center;
+
+        }
+        body{
+
+            background-color: lightgreen;
+            align-content: center;
+        }
+        button{
+             background-color:lightcoral;
+             height: fit-content;
+             width: auto;
+        }
+        button:hover{
+               box-shadow: 10px,5px,2px,8px;
+
+        }
+        h1{
+           background-color:red;
+           height: fit-content;
+           width: auto; 
+            align-content: center;
+        }
+        
+
+    </style>
+
+</head>
+<h1>vishnu coffee cafe</h1>
+<body>
+    <div>
+    <div>
+
+    <label for="tea">Tea</label>
+    <input type="radio" name="item" id="tea" value="tea"><br>
+    <label for="coffee">Coffee</label>
+    <input type="radio" name="item" id="coffee" value="coffee"><br>
+    <label for="badam">Badam Milk</label>
+    <input type="radio" name="item" id="badam" value="badam"><br>
+    <label for="lemon">Lemon Tea</label>
+    <input type="radio" name="item" id="lemon" value="lemon"><br>
+    <button type="button" onclick="add()">Add</button> 
+    <button type="button" onclick="total()">Total</button>
+    <button type="button" onclick="remove()">remove</button>
+    </div> <hr>
+    <div>
+        <h1>Bill</h1>
+        <p>Tea Count : <span id="teacount">0</span></p>
+        <p>Coffee Count : <span id="coffeecount">0</span></p>
+        <p>Badam Milk Count : <span id="badamcount">0</span></p>
+        <p>Lemon Tea Count : <span id="lemoncount">0</span></p>
+
+        <p id="bill"></p>
+
+
+
+
+    </div>
+    </div>
+
+
+
+    <script>
+
+        let teacount = 0;
+        let lemoncount = 0;
+        let coffeecount = 0;
+        let badamcount = 0;
+
+
+        let teaprice = 25;
+        let lemonprice = 10;
+        let coffeeprice = 30;
+        let badamprice = 15;
+
+
+
+        function add(){
+            const selectedrink = document.querySelector('input[name="item"]:checked');
+
+            if (selectedrink){
+                const drinktype = selectedrink.value;
+                if (drinktype =='tea'){
+                    teacount++;
+                    document.getElementById('teacount').textContent= teacount;
+                }
+                if (drinktype =='badam'){
+                    badamcount++;
+                    document.getElementById('badamcount').textContent= badamcount;
+                }
+                if (drinktype =='lemon'){
+                    lemoncount++;
+                    document.getElementById('lemoncount').textContent= lemoncount;
+                }
+                if (drinktype =='coffee'){
+                    coffeecount++;
+                    document.getElementById('coffeecount').textContent= coffeecount;
+                }
+                
+                
+            }
+
+        }
+
+        function total(){
+
+            let total = (teacount *teaprice)+
+            (coffeecount*coffeeprice)+(badamcount*badamprice)
+            +(lemoncount*lemonprice)
+            document.getElementById('bill').textContent= "Total : "+"₹ "+total
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+#HTML -- hyper text markup language --
+class first_class():
+	#html basic
+	def html_basic():
+
+		<!-- --> = 'comments in html'
+		html = 'hyper text markup language'
+		<!DOCTYPE html>... ='Document type'
+		<html></html> = 'html tag root of html document'
+		<html lang='en'> = 'language defination'	
+		<head></head> = 'head tag of the html'
+		<meta > = 'data about the data' 
+		<body></body> = 'body of the html,contains all data rendered by the browser'
+		<title></title> = 'title of the html page'
+		<p></p> = 'html paragraph tag'
+		<p>hello</p> = 'html element'
+	
+	#HTML tags
+	def html_tags():
+		atrributes = 'add more info about tags'
+		heading_tag = 'used to display headings'
+		heading_tags = '<h1></h1>...<h6></h6>' #heading tag
+		paragraph_tag = '<p></p>' #to add paragraph in html
+		anchor_tag = '<a href="https//:raki.com">raki</a>' #used to add link in html pade
+		
+		
